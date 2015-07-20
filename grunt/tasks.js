@@ -4,8 +4,8 @@ module.exports = function (grunt) {
   // Build icon styles from svg using Grunticon
   grunt.registerTask(
     'icons',
-    'Serves svg styles and backup pngs.',
-    ['svgmin', 'grunticon', 'cssmin']
+    'Builds SVG styles and backup pngs.',
+    ['svgmin', 'grunticon', 'cssmin', 'clean:icons']
   );
 
   grunt.registerTask(
@@ -25,13 +25,13 @@ module.exports = function (grunt) {
   grunt.registerTask(
     'build-scripts',
     'Concat all scripts for devlopment',
-    ['concat:dev', 'uglify:dev']
+    ['concat:build', 'uglify:build']
   );
 
   // Build js scripts for development
   grunt.registerTask(
     'copy-dev-assets',
-    'Copy assets over to _dev folder',
+    'Copy assets over to _dev folder for static sites',
     ['copy:devImages', 'copy:devVendorScripts', 'copy:devHTML']
   );
 

@@ -1,7 +1,6 @@
 module.exports = {
   options: {
-    livereload: true,
-    spawn: false
+    livereload: true
   },
   configFiles: {
     files: [ 'Gruntfile.js', 'grunt/tasks.js', 'grunt/config-lib/*.js' ],
@@ -9,8 +8,11 @@ module.exports = {
       reload: true
     }
   },
+  theme: {
+    files: ['<%= pkg.themeFolder %>/*.php', '<%= pkg.themeFolder %>/template-partials/*.php']
+  },
   sass: {
-    files: ['<%= pkg.themeFolder %>/scss/**/*.scss'],
+    files: ['<%= pkg.themeFolder %>/scss/**/*'],
     tasks: ['build-styles']
   },
   js: {
