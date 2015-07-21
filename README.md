@@ -5,6 +5,9 @@
 * [NodeJS & NPM](http://nodejs.org/) Node is used for running grunt tasks.
 * [GruntJS](http://gruntjs.com/) Grunt a Javascript task runner.
 
+
+## Installation
+
 Install the set of Grunt packages in this starter library:
 
 ```shell
