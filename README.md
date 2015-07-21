@@ -46,7 +46,7 @@ When installing this Grunt project you will be installing these plugins:
 
 ## Grunt Tasks
 
-#### `icons` - Runs `svgmin` followed by `grunticon` followed by `cssmin` followed by `clean:icons`
+`icons` - Runs `svgmin` followed by `grunticon` followed by `cssmin` followed by `clean:icons`
 * `svgmin` - Minifies SVG files in the `svgs` direcotry into the directory `compressed`
 * `grunticon` - Builds data uri style sheets from SVGs
 * `cssmin` - Minifies CSS files. Specificly the ones outputed from Grunticon.
