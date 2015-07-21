@@ -46,8 +46,25 @@ When installing this Grunt project you will be installing these plugins:
 
 ## Grunt Tasks
 
-`icons` - Runs `svgmin` followed by `grunticon` followed by `cssmin` followed by `clean:icons`
+`icons` - Runs `svgmin` followed by `grunticon` followed by `cssmin` followed by `clean:icons`.
+
 * `svgmin` - Minifies SVG files in the `svgs` direcotry into the directory `compressed`
 * `grunticon` - Builds data uri style sheets from SVGs
 * `cssmin` - Minifies CSS files. Specificly the ones outputed from Grunticon.
 * `clean:icons` - Cleans and deletes the `compressed` directory from within the `svgs` directroy in your theme.
+
+`fav-icons` - Runs `favicons`.
+
+* `favicons` - Creates a list of favicon images and meta tags from a `logo.png` within `favicons` directory and outputs into `favicons/build`.
+
+`build-styles` - Runs `sass:build` followed by `autoprefixer:build`.
+
+* `sass:build` - Converts sass from `scss` dirctory to css in the `css` directory.
+* `autoprefixer:build` - Adds browser specific prefixes to the css files.
+
+`build-scripts` - Runs `concat:build` followed by `uglify:build`.
+
+* `concat:build` - Concatinates all the themes javascript files into one file named `js/dist/compiled.js`.
+* `uglify:build` - Copy and minifies `compiled.js` file to `js/dist/compiled.min.js`.
+
+
