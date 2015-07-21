@@ -1,4 +1,6 @@
-# Installation
+# Grunt Starter
+
+> Common Grunt tasks used on most projects
 
 ## Prerequisites
 
