@@ -43,3 +43,11 @@ When installing this Grunt project you will be installing these plugins:
 * [Load Grunt Tasks](https://www.npmjs.com/package/load-grunt-tasks)
 * [Matchdep](https://www.npmjs.com/package/matchdep)
 * [Time Grunt](https://www.npmjs.com/package/time-grunt)
+
+## Grunt Tasks
+
+#### `icons` - Runs `svgmin` followed by `grunticon` followed by `cssmin` followed by `clean:icons`
+* `svgmin` - Minifies SVG files in the `svgs` direcotry into the directory `compressed`
+* `grunticon` - Builds data uri style sheets from SVGs
+* `cssmin` - Minifies CSS files. Specificly the ones outputed from Grunticon.
+* `clean:icons` - Cleans and deletes the `compressed` directory from within the `svgs` directroy in your theme.
