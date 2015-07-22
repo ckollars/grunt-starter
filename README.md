@@ -10,10 +10,10 @@
 
 ## Installation
 
-Install the set of Grunt packages in this starter library:
+Install the set of Grunt plugins in the root folder of your project:
 
 ```shell
-npm install grunt-contrib-copy --save-dev
+npm install
 ```
 
 Inside the `package.json` file there is a 3 variables, `bower, themeFolder &amp; staticFolder`. Set these variables to the appropriate project directory structure.
